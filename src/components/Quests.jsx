@@ -24,7 +24,7 @@ const Quests = (props) => {
                                         <div className='text-sm text-slate-400 font-medium'>{quest.description}</div>
                                     </div>
                                 </td>
-                                <td className='py-3'>{quest.points} PTS</td>
+                                <td className='py-3'>{quest.points}</td>
                                 <td className='py-3'>
                                     <button className='rounded-full px-4 py-2 shadow-md bg-gradient-to-r from-[#0a0015] to-gray-800'>Connect Wallet</button>
                                 </td>
