@@ -4,6 +4,7 @@ import Quests from '../components/Quests'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useParams } from 'react-router-dom';
 import { rows } from '../constant/index';
+import Logo from '../assets/logo/nthfinance_logo.png'
 
 const ProjectsPage = () => {
   const { id } = useParams();
@@ -26,7 +27,12 @@ const ProjectsPage = () => {
             </Link>
         </div>
         <div className='mt-12'>
-            <h2 className='text-slate-200 text-3xl font-semibold'>What is {row.project}?</h2>
+        <h2 className='text-slate-200 text-3xl font-semibold flex items-center'>
+              What is
+                <img src={Logo} alt='logo' className='w-10 h-10'/>
+                 {row.project}
+              ?
+            </h2>
             <p className='text-slate-500 text-sm font-medium'>{row.tagLine}</p>
         </div>
         <div className='mt-12 mb-20'>

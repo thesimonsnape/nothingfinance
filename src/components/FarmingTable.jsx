@@ -2,6 +2,7 @@ import React from 'react'
 import { rows } from '../constant/index';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
+import Logo from '../assets/logo/nthfinance_logo.png'
 
 const FarmingTable = () => {
   const location = useLocation();
@@ -33,7 +34,10 @@ const FarmingTable = () => {
                         return (
                             <tr key={idx} className={`${idx % 2 === 0? 'text-white bg-[#06060d] opacity-50 ' : 'bg-[#0e0f11] opacity-50 text-white'}`}>
                                 <td className='py-3'>{el.rank}</td>
-                                <td className='py-3'>{el.project}</td>
+                                <td className='py-3 flex items-center'>
+                                   <img src={Logo} alt='logo' className='w-10 h-10'/>
+                                   {el.project}
+                                </td>
                                 <td className='py-3'>{el.totalRewards}</td>
                                 <td className='py-3'>{el.totalUsers}</td>
                                 <td className='py-3'>{el.yourPoints}</td>
