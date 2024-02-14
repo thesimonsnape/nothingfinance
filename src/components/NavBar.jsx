@@ -11,7 +11,7 @@ const NavBar = () => {
             <h1 className='text-xl font-bold text-[11px] md:text-base hidden md:block'>Nothing Finance</h1>
         </div>
       </Link>
-      <div className='flex gap-5 items-center md:-translate-x-2 text-slate-100 text-[11px] md:text-base font-semibold'>
+      <div className='flex gap-12 items-center md:-translate-x-2 text-slate-100 text-[11px] md:text-base font-semibold'>
           <Link to='/projects' className='link-styles'>
             <div className='cursor-pointer'>Earn points</div>
           </Link>
