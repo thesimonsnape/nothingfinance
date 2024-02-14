@@ -21,7 +21,6 @@ const LendingTable = () => {
             <table className='w-full mt-10'>
                 <tbody>
                     <tr className='text-gray-500 font-semibold text-center'>
-                        <th className='text-center'></th>
                         <th className='text-center'>PROTOCOL</th>
                         <th className='text-center'>TOTAL POINTS</th>
                         <th className='text-center'>TOTAL USERS</th>
@@ -33,7 +32,6 @@ const LendingTable = () => {
                     {rows.map((el, idx) => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
-                                <td className='py-3 opacity-50 text-center'>{el.rank}</td>
                                 <td className='py-3 flex gap-0 items-center justify-items-center opacity-50 text-center content-center justify-center'>
                                    <img src={Logo} alt='logo' className='w-10 h-10 text-center'/>
                                    {el.project}

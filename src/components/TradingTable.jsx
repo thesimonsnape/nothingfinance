@@ -39,7 +39,7 @@ const TradingTable = () => {
             <div className={`my-10 flex text-white ${location.pathname === '/project' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Buy protocol points</h2>
                 <Link to='/projects' className='hover:underline link-styles flex gap-2 items-center cursor-pointer'>
-                    <div className='flex gap-2 items-center cursor-pointer'>
+                    <div className='flex gap-2 items-center cursor-pointer text-[#6459e3]'>
                         Want to Sell your points? Register here <FaArrowRightLong className='translate-y-[1px]' />
                     </div>
                 </Link>
@@ -47,7 +47,6 @@ const TradingTable = () => {
             <table className='w-full mt-10'>
                 <tbody>
                     <tr className='text-gray-500 font-semibold'>
-                        <th className='text-center'></th>
                         <th className='text-center'>SELLER</th>
                         <th className='text-center'>PRICE</th>
                         <th className='text-center'>QUANTITY</th>
@@ -57,7 +56,6 @@ const TradingTable = () => {
                     {orders.map((el, idx) => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
-                                <td className='text-center py-3  opacity-50 '>{idx}</td>
                                 <td className='py-3 text-center opacity-50'>
                                     {el.from.substring(0, 4)}...{el.from.substring(el.from.length - 4, el.from.length - 0)}
                                 </td>
