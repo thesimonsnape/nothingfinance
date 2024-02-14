@@ -9,7 +9,7 @@ const LeaderBoardTable = () => {
 
   return (
     <div className='bg-transparent w-full h-full flex justify-center items-center '>
-        <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-lg shadow-[#3b3b3b] px-10 '>
+        <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-md shadow-[#3b3b3b] px-10 '>
             <div className={`my-10 flex text-white ${location.pathname === '/project' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Earn protocol points</h2>
                 {location.pathname !== '/projects' &&
@@ -53,6 +53,7 @@ const LeaderBoardTable = () => {
                             </tr>
                         )
                     })}
+                    <br />
                 </tbody>
             </table>
         </div>
