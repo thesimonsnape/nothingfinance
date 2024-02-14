@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Logo from '../assets/logo/nthfinance_logo.png'
-import LeaderBoardTable from '../components/LeaderBoardTable';
+import ProjectTable from '../components/ProjectTable';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -16,11 +17,13 @@ const LandingPage = () => {
                 <h2 className='text-7xl font-semibold leading-tight tracking-wide bg-gradient-to-r from-[#6458e2] to-[#b6a2ec] bg-clip-text text-transparent'>step into the void?</h2>
             </div>
             <div className='mt-14'>
-                <button className='border border-gray-300 rounded-full px-5 py-3 flex items-center gap-2 font-medium'>Enter NTHFinance <FaArrowRightLong className='translate-y-[2px]'/></button>
+                <Link to='/projects' className='border border-gray-300 rounded-full px-5 py-3 flex items-center gap-2 font-medium'>
+                    Enter NTHFinance <FaArrowRightLong className='translate-y-[2px]'/>
+                </Link>
             </div>
         </div>
         <div className='mb-14'>
-            <LeaderBoardTable />
+            <ProjectTable />
         </div>
     </div>
   )

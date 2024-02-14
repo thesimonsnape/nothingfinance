@@ -13,6 +13,9 @@ const NavBar = () => {
         </div>
       </Link>
       <div className='flex gap-5 items-center md:-translate-x-2 text-slate-100 text-[11px] md:text-base font-semibold'>
+          <Link to='/projects'>
+            <div className='cursor-pointer hover:underline'>Protocols</div>
+          </Link>
           <Link to='/tasks'>
             <div className='cursor-pointer hover:underline'>Tasks</div>
           </Link>
