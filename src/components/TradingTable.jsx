@@ -41,10 +41,11 @@ const TradingTable = () => {
                                 <td className='py-3'>{el.totalPoints}</td>
                                 <td className='py-3'>{el.totalUsers}</td>
                                 <td className='py-3'>{el.yourPoints}</td>
-                                <td className='py-3 flex gap-2 justify-center items-center'>
-                                    <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 md:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Buy</button>
-                                    <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 md:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Sell</button>
-                                </td>
+                                <button to={`/project/${el.rank}`} className='link-styles flex gap-2 items-center cursor-pointer'>
+                                    <div className='flex gap-2 items-center cursor-pointer'>
+                                        Buy
+                                    </div>
+                                </button>
                             </tr>
                         )
                     })}

@@ -19,31 +19,39 @@ const LendingTable = () => {
                 </Link>
             </div>
             <table className='w-full mt-10'>
-                <thead className=''>
-                    <tr className='text-gray-500 font-semibold'>
-                        <td className='w-20 h-10 '>RANK</td>
-                        <td className='w-auto h-10'>PROTOCOL</td>
-                        <td className='w-fit max-w-10 h-10'>TOTAL POINTS</td>
-                        <td className='w-fit max-w-20 h-10'>TOTAL USERS</td>
-                        <td className='w-fit max-w-20 h-10'>YOUR POINTS</td>
-                        <td className='w-20 h-10'></td>
-                    </tr>
-                </thead>
                 <tbody>
+                    <tr className='text-gray-500 font-semibold text-center'>
+                        <th className='text-center'>RANK</th>
+                        <th className='text-center'>PROTOCOL</th>
+                        <th className='text-center'>TOTAL POINTS</th>
+                        <th className='text-center'>TOTAL USERS</th>
+                        <th className='text-center'>YOUR POINTS</th>
+                        <th className='text-center'></th>
+                    </tr>
                     {rows.map((el, idx) => {
                         return (
-                            <tr key={idx} className={`${idx % 2 === 0? 'text-white bg-[#06060d] opacity-50 ' : 'bg-[#0e0f11] opacity-50 text-white'}`}>
-                                <td className='py-3'>{el.rank}</td>
-                                <td className='py-3 flex items-center'>
-                                   <img src={Logo} alt='logo' className='w-10 h-10'/>
+                            <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
+                                <td className='py-3 opacity-50 text-center'>{el.rank}</td>
+                                <td className='py-3 flex gap-0 items-center justify-items-center opacity-50 text-center content-center justify-center'>
+                                   <img src={Logo} alt='logo' className='w-10 h-10 text-center'/>
                                    {el.project}
                                 </td>
-                                <td className='py-3'>{el.totalPoints}</td>
-                                <td className='py-3'>{el.totalUsers}</td>
-                                <td className='py-3'>{el.yourPoints}</td>
-                                <td className='py-3 flex gap-2 justify-center items-center'>
-                                    <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 md:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Lend</button>
-                                    <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 md:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Borrow</button>
+                                <td className='py-3 opacity-50 text-center'>{el.totalPoints} PTS</td>
+                                <td className='py-3 opacity-50 text-center'>{el.totalUsers}</td>
+                                <td className='py-3 opacity-50 text-center'>{el.yourPoints}</td>
+                                <td className='py-3'>
+                                    <button to={`/project/${el.rank}`} className='text-center hover:underline link-styles flex gap-2 items-center cursor-pointer opacity-100'>
+                                        <div className='flex gap-2 items-center text-center cursor-pointer opacity-100'>
+                                            Lend
+                                        </div>
+                                    </button>
+                                </td>
+                                <td className='py-3'>
+                                    <button to={`/project/${el.rank}`} className='hover:underline link-styles flex gap-2 items-center cursor-pointer opacity-100'>
+                                        <div className='flex gap-2 items-center cursor-pointer opacity-100'>
+                                            Borrow
+                                        </div>
+                                    </button>
                                 </td>
                             </tr>
                         )
