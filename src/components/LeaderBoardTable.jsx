@@ -12,7 +12,7 @@ const LeaderBoardTable = (props) => {
             <div className={`my-10 flex text-white ${location.pathname === '/leaderboard' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>
                     Leaderboard
-                    <p className='text-slate-500 text-sm'>NOTHING Cosmonauts will be airdropped 10% of $NOTHING's circulating supply on launch based on accumulated points</p>
+                    <p className='text-slate-500 text-sm'>NTH Cosmonauts will be airdropped 10% of $NTH's circulating supply on launch based on accumulated points</p>
                 </h2>
                 <Link to={`/project/${props.id}`} className='link-styles flex gap-2 items-center cursor-pointer'>
                         <div className='flex gap-2 items-center cursor-pointer'>

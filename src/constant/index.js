@@ -6,7 +6,7 @@ export const rows = [
         totalPoints: '1,000,000',
         totalRewards: '100,000',
         yourPoints: '1,000',
-        tagLine: 'NOTHING Gravity is an airdrop campaign to distribute the $NOTHING drop. The greater your points total, the larger your $NOTHING allocation.',
+        tagLine: 'NTH Gravity is an airdrop campaign to distribute the $NTH drop. The greater your points total, the larger your $NTH allocation.',
         leaderboard: [
             {
                 rank: 1,
@@ -58,7 +58,7 @@ export const rows = [
         totalPoints: '1,000,000',
         totalRewards: '100,000',
         yourPoints: '1,000',
-        tagLine: 'NOTHING Gravity is an airdrop campaign to distribute the $NOTHING drop. The greater your points total, the larger your $NOTHING allocation.',
+        tagLine: 'NTH Gravity is an airdrop campaign to distribute the $NTH drop. The greater your points total, the larger your $NTH allocation.',
         leaderboard: [
             {
                 rank: 1,
@@ -110,7 +110,7 @@ export const rows = [
         totalPoints: '1,000,000',
         totalRewards: '100,000',
         yourPoints: '1,000',
-        tagLine: 'NOTHING Gravity is an airdrop campaign to distribute the $NOTHING drop. The greater your points total, the larger your $NOTHING allocation.',
+        tagLine: 'NTH Gravity is an airdrop campaign to distribute the $NTH drop. The greater your points total, the larger your $NTH allocation.',
         leaderboard: [
             {
                 rank: 1,
