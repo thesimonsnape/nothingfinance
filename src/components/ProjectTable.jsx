@@ -21,29 +21,27 @@ const LeaderBoardTable = () => {
                 }
             </div>
             <table className='w-full mt-10'>
-                <thead className=''>
-                    <tr className='text-gray-500 font-semibold'>
-                        <td className='w-20 h-10 '>RANK</td>
-                        <td className='w-auto h-10'>PROTOCOL</td>
-                        <td className='w-fit max-w-10 h-10'>CURRENT POINTS SUPPLY</td>
-                        <td className='w-fit max-w-20 h-10'>TOTAL USERS</td>
-                        <td className='w-20 h-10'></td>
-                    </tr>
-                </thead>
                 <tbody>
+                    <tr className='text-gray-500 font-semibold text-center'>
+                        <td className='text-center'>RANK</td>
+                        <td className='text-center'>PROTOCOL</td>
+                        <td className='text-center'>CURRENT POINTS SUPPLY</td>
+                        <td className='text-center'>TOTAL USERS</td>
+                        <td className='text-center'></td>
+                    </tr>
                     {rows.map((el, idx) => {
                         return (
-                            <tr key={idx} className={`${idx % 2 === 0? 'text-white bg-[#06060d] opacity-50 ' : 'bg-[#0e0f11] opacity-50 text-white'}`}>
-                                <td className='py-3'>{el.rank}</td>
-                                <td className='py-3 flex items-center'>
-                                   <img src={Logo} alt='logo' className='w-10 h-10'/>
+                            <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
+                                <td className='text-center py-3 opacity-50 '>{el.rank}</td>
+                                <td className='text-center justify-center py-3 flex items-center opacity-50 '>
+                                   <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
-                                <td className='py-3'>{el.totalPoints} PTS</td>
-                                <td className='py-3'>{el.totalUsers}</td>
-                                <td className='py-3'>
-                                <Link to={`/project/${el.rank}`} className='link-styles flex gap-2 items-center cursor-pointer'>
-                                    <div className='flex gap-2 items-center cursor-pointer'>
+                                <td className='py-3 text-center opacity-50 '>{el.totalPoints} PTS</td>
+                                <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
+                                <td className='py-3 text-center'>
+                                <Link to={`/project/${el.rank}`} className='hover:underline link-styles opacity-100 text-center flex gap-2 items-center cursor-pointer'>
+                                    <div className='flex gap-2 items-center cursor-pointer text-center opacity-100 '>
                                         View <FaArrowRightLong className='translate-y-[1px]' />
                                     </div>
                                 </Link>
