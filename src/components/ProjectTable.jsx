@@ -28,7 +28,7 @@ const LeaderBoardTable = () => {
                         <th className='text-center'>CURRENT POINTS SUPPLY</th>
                         <th className='text-center'>TOTAL USERS</th>
                         <th className='text-center'>FARMING APY</th>
-                        <th className='text-center'>LENDING APY</th>
+                        <th className='text-center'>LENDING SUPPLY APY</th>
                         <th className='text-center'></th>
                     </tr>
                     {rows.map((el, idx) => {
