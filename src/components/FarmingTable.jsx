@@ -19,31 +19,29 @@ const FarmingTable = () => {
                 </Link>
             </div>
             <table className='w-full mt-10'>
-                <thead className=''>
-                    <tr className='text-gray-500 font-semibold'>
-                        <td className='w-20 h-10 '>RANK</td>
-                        <td className='w-auto h-10'>PROTOCOL</td>
-                        <td className='w-fit max-w-10 h-10'>TOTAL REWARDS</td>
-                        <td className='w-fit max-w-20 h-10'>TOTAL USERS</td>
-                        <td className='w-fit max-w-20 h-10'>YOUR POINTS</td>
-                        <td className='w-20 h-10'></td>
-                    </tr>
-                </thead>
                 <tbody>
+                    <tr className='text-gray-500 font-semibold text-center'>
+                        <th className='text-center'></th>
+                        <th className='text-center'>PROTOCOL</th>
+                        <th className='text-center'>TOTAL REWARDS</th>
+                        <th className='text-center'>TOTAL USERS</th>
+                        <th className='text-center'>YOUR POINTS</th>
+                        <th className='text-center'></th>
+                    </tr>
                     {rows.map((el, idx) => {
                         return (
-                            <tr key={idx} className={`${idx % 2 === 0? 'text-white bg-[#06060d] opacity-50 ' : 'bg-[#0e0f11] opacity-50 text-white'}`}>
-                                <td className='py-3'>{el.rank}</td>
-                                <td className='py-3 flex items-center'>
-                                   <img src={Logo} alt='logo' className='w-10 h-10'/>
+                            <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
+                                <td className='py-3 text-center opacity-50 '>{el.rank}</td>
+                                <td className='py-3 text-center opacity-50 flex justify-center items-center'>
+                                   <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
-                                <td className='py-3'>{el.totalRewards}</td>
-                                <td className='py-3'>{el.totalUsers}</td>
-                                <td className='py-3'>{el.yourPoints}</td>
-                                <td className='py-3'>
-                                <button to={`/project/${el.rank}`} className='link-styles flex gap-2 items-center cursor-pointer'>
-                                    <div className='flex gap-2 items-center cursor-pointer'>
+                                <td className='py-3 text-center opacity-50 '>{el.totalRewards}</td>
+                                <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
+                                <td className='py-3 text-center opacity-50 '>{el.yourPoints}</td>
+                                <td className='py-3 text-center'>
+                                <button to={`/project/${el.rank}`} className='hover:unnderline opacity-100 text-center link-styles flex gap-2 items-center cursor-pointer'>
+                                    <div className='hover:unnderline flex gap-2 text-center items-center cursor-pointer opacity-100'>
                                         Stake
                                     </div>
                                 </button>
