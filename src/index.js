@@ -9,6 +9,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ProjectPage from './pages/ProjectPage';
 import FarmingPage from './pages/FarmingPage';
 import TradePage from './pages/TradePage';
+import LendPage from './pages/LendPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: '/trade',
     element: <TradePage />
+  },
+  {
+    path: '/lend',
+    element: <LendPage />
   },
 ]);
 
