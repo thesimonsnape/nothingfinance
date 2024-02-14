@@ -60,7 +60,7 @@ const TradingTable = () => {
                                     {el.from.substring(0, 4)}...{el.from.substring(el.from.length - 4, el.from.length - 0)}
                                 </td>
                                 <td className='text-center py-3 opacity-50 '>${el.price}</td>
-                                <td className='text-center py-3 opacity-50 '>{el.quantity} PTS</td>
+                                <td className='text-center py-3 opacity-50 '>{el.quantity}</td>
                                 <td className='text-center py-3 flex justify-center items-center opacity-50 '>
                                    <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
