@@ -30,7 +30,7 @@ const ProjectsPage = () => {
             <p className='text-slate-500 text-sm font-medium'>{row.tagLine}</p>
         </div>
         <div className='mt-12 mb-20'>
-            <Quests />
+            <Quests quests={row.quests} />
         </div>
       </div>
     </div>

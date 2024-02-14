@@ -1,30 +1,8 @@
 import React from 'react'
 
-const quests = [
-    {
-        id: 1,
-        name: 'Join our Discord',
-        description: 'Join our Discord to get access to the latest updates, ask questions, and get help from the community!',
-        points: '100',
-        status: 'active'
-    },
-    {
-        id: 2,
-        name: 'Say GM in Discord ☀️',
-        description: 'Head to the #gm channel on our discord and say GM to get daily points',
-        points: '10 pts per gm per day',
-        status: 'active'
-    },
-    {
-        id: 3,
-        name: 'Follow on twitter',
-        description: 'Follow our twitter to get access to the latest updates, ask questions, and get help from the community!',
-        points: '1000',
-        status: 'active'
-    },
-]
+const Quests = (props) => {
+  const quests = props.quests
 
-const Quests = () => {
   return (
     <div>
         <div>
