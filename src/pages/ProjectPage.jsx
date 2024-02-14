@@ -16,7 +16,7 @@ const ProjectsPage = () => {
         <div className='flex flex-col gap-2 w-full text-white px-4 md:px-10 py-5 items-start justify-center rounded-lg shadow-[#211f3e] shadow-md'>
             <h2 className='text-xl'>Available Points</h2>
             <div className='flex items-center w-full gap-2'>
-            <span className='text-6xl text-[#6459e3]'>{row.totalPoints}</span>&nbsp;<span className='text-base'>Earn more Points by completing the Quests</span>
+             <span className='text-6xl text-[#6459e3]'>{row.totalPoints}<b className='text-[10px] text-[white]'>Earn more points by participating and completing the quests</b></span>
             </div>
             <br />
             <Link to='/projects' className='link-styles flex gap-2 items-center cursor-pointer'>
