@@ -51,6 +51,7 @@ const FarmingTable = () => {
                             </tr>
                         )
                     })}
+                    <br />
                 </tbody>
             </table>
         </div>

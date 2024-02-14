@@ -8,7 +8,7 @@ const LeaderBoardTable = (props) => {
   const rows = props.rows;
   return (
     <div className='bg-transparent w-full h-full flex justify-center items-center '>
-        <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-lg shadow-[#3b3b3b] px-10 '>
+        <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-md shadow-[#3b3b3b] px-10 '>
             <div className={`my-10 flex text-white ${location.pathname === '/leaderboard' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>
                     Leaderboard
@@ -38,6 +38,7 @@ const LeaderBoardTable = (props) => {
                             </tr>
                         )
                     })}
+                    <br />
                 </tbody>
             </table>
         </div>

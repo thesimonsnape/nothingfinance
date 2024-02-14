@@ -49,6 +49,7 @@ const TradingTable = () => {
                             </tr>
                         )
                     })}
+                    <br />
                 </tbody>
             </table>
         </div>

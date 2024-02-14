@@ -31,6 +31,7 @@ const Quests = (props) => {
                             </tr>
                         )
                     })}
+                    <br />
                 </tbody>
             </table>
         </div>

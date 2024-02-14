@@ -60,6 +60,7 @@ const LendingTable = () => {
                             </tr>
                         )
                     })}
+                    <br />
                 </tbody>
             </table>
         </div>
