@@ -11,7 +11,7 @@ const Quests = (props) => {
                     <tr className='text-gray-500 font-semibold'>
                         <td className='w-auto max-w-49 h-10 text-xl'>QUESTS</td>
                         <td className='w-fit h-10 text-xl'>POINTS</td>
-                        <td className='w-fit h-10 text-xl'>STATAUS</td>
+                        <td className='w-fit h-10 text-xl'>STATUS</td>
                     </tr>
                 </thead>
                 <tbody>
