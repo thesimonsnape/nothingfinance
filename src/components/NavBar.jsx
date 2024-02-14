@@ -13,13 +13,7 @@ const NavBar = () => {
       </Link>
       <div className='flex gap-5 items-center md:-translate-x-2 text-slate-100 text-[11px] md:text-base font-semibold'>
           <Link to='/projects' className='link-styles'>
-            <div className='cursor-pointer'>Protocols</div>
-          </Link>
-          <Link to='/tasks' className='link-styles'>
-            <div className='cursor-pointer'>Tasks</div>
-          </Link>
-          <Link to='/leaderboard' className='link-styles'>
-            <div className='cursor-pointer duration-700 ease-in-out'>Leaderboard</div>
+            <div className='cursor-pointer'>Earn points</div>
           </Link>
       </div>
       <div>
