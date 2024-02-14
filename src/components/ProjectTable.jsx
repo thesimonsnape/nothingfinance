@@ -27,6 +27,8 @@ const LeaderBoardTable = () => {
                         <th className='text-center'>PROTOCOL</th>
                         <th className='text-center'>CURRENT POINTS SUPPLY</th>
                         <th className='text-center'>TOTAL USERS</th>
+                        <th className='text-center'>FARMING APY</th>
+                        <th className='text-center'>LENDING APY</th>
                         <th className='text-center'></th>
                     </tr>
                     {rows.map((el, idx) => {
@@ -39,6 +41,8 @@ const LeaderBoardTable = () => {
                                 </td>
                                 <td className='py-3 text-center opacity-50 '>{el.totalPoints} PTS</td>
                                 <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
+                                <td className='py-3 text-center opacity-50 '>{el.apy}</td>
+                                <td className='py-3 text-center opacity-50 '>{el.lendingAPY}</td>
                                 <td className='py-3 text-center'>
                                 <Link to={`/project/${el.rank}`} className='hover:underline link-styles opacity-100 text-center flex gap-2 items-center cursor-pointer'>
                                     <div className='flex gap-2 items-center cursor-pointer text-center opacity-100 '>

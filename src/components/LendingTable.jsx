@@ -26,6 +26,8 @@ const LendingTable = () => {
                         <th className='text-center'>TOTAL POINTS</th>
                         <th className='text-center'>TOTAL USERS</th>
                         <th className='text-center'>YOUR POINTS</th>
+                        <th className='text-center'>SUPPLY APY</th>
+                        <th className='text-center'>BORROW APY</th>
                         <th className='text-center'></th>
                     </tr>
                     {rows.map((el, idx) => {
@@ -39,6 +41,8 @@ const LendingTable = () => {
                                 <td className='py-3 opacity-50 text-center'>{el.totalPoints} PTS</td>
                                 <td className='py-3 opacity-50 text-center'>{el.totalUsers}</td>
                                 <td className='py-3 opacity-50 text-center'>{el.yourPoints}</td>
+                                <td className='py-3 opacity-50 text-center'>{el.lendingAPY}</td>
+                                <td className='py-3 opacity-50 text-center'>{el.borrowAPY}</td>
                                 <td className='py-3'>
                                     <button to={`/project/${el.rank}`} className='text-center hover:underline link-styles flex gap-2 items-center cursor-pointer opacity-100'>
                                         <div className='flex gap-2 items-center text-center cursor-pointer opacity-100'>
