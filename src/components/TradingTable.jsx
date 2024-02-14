@@ -1,8 +1,34 @@
 import React from 'react'
-import { rows } from '../constant/index';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo/nthfinance_logo.png'
+
+const orders = [
+    {
+        from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
+        price: '9',
+        quantity: '100 PTS',
+        project: 'Nothing Swap'
+    },
+    {
+        from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
+        price: '9',
+        quantity: '100 PTS',
+        project: 'Nothing Swap'
+    },
+    {
+        from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
+        price: '9',
+        quantity: '100 PTS',
+        project: 'Nothing Lend'
+    },
+    {
+        from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
+        price: '9',
+        quantity: '100 PTS',
+        project: 'Nothing USD'
+    },
+]
 
 const TradingTable = () => {
   const location = useLocation();
@@ -22,23 +48,25 @@ const TradingTable = () => {
                 <tbody>
                     <tr className='text-gray-500 font-semibold'>
                         <th className='text-center'></th>
-                        <th className='text-center'>Addres</th>
-                        <th className='text-center'>TOTAL POINTS</th>
-                        <th className='text-center'>TOTAL USERS</th>
-                        <th className='text-center'>YOUR POINTS</th>
+                        <th className='text-center'>USER ADDRESS</th>
+                        <th className='text-center'>PRICE</th>
+                        <th className='text-center'>QUANTITY</th>
+                        <th className='text-center'>PROTOCOL</th>
                         <th className='text-center'></th>
                     </tr>
-                    {rows.map((el, idx) => {
+                    {orders.map((el, idx) => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
-                                <td className='text-center py-3  opacity-50 '>{el.rank}</td>
+                                <td className='text-center py-3  opacity-50 '>{idx}</td>
+                                <td className='py-3 text-center opacity-50'>
+                                    {el.from.substring(0, 4)}...{el.from.substring(el.from.length - 4, el.from.length - 0)}
+                                </td>
+                                <td className='text-center py-3 opacity-50 '>{el.price}</td>
+                                <td className='text-center py-3 opacity-50 '>{el.quantity} PTS</td>
                                 <td className='text-center py-3 flex justify-center items-center opacity-50 '>
                                    <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
-                                <td className='text-center py-3 opacity-50 '>{el.totalPoints}</td>
-                                <td className='text-center py-3 opacity-50 '>{el.totalUsers}</td>
-                                <td className='text-center py-3 opacity-50 '>{el.yourPoints}</td>
                                 <td className='text-center py-3'>
                                     <button to={`/project/${el.rank}`} className='text-center hover:underline opacity-100 link-styles items-center cursor-pointer'>
                                         <div className='text-center opacity-100 items-center cursor-pointer'>
