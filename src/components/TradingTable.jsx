@@ -48,7 +48,7 @@ const TradingTable = () => {
                 <tbody>
                     <tr className='text-gray-500 font-semibold'>
                         <th className='text-center'></th>
-                        <th className='text-center'>USER ADDRESS</th>
+                        <th className='text-center'>SELLER</th>
                         <th className='text-center'>PRICE</th>
                         <th className='text-center'>QUANTITY</th>
                         <th className='text-center'>PROTOCOL</th>
