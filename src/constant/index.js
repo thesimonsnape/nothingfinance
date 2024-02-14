@@ -4,6 +4,8 @@ export const rows = [
         project: 'Nothing Swap',
         totalUsers: '120k',
         totalPoints: '1,000,000',
+        totalRewards: '100,000',
+        yourPoints: '1,000',
         tagLine: 'NOTHING Gravity is an airdrop campaign to distribute the $NOTHING drop. The greater your points total, the larger your $NOTHING allocation.',
         leaderboard: [
             {
@@ -54,6 +56,8 @@ export const rows = [
         project: 'Nothing Lend',
         totalUsers: '100k',
         totalPoints: '1,000,000',
+        totalRewards: '100,000',
+        yourPoints: '1,000',
         tagLine: 'NOTHING Gravity is an airdrop campaign to distribute the $NOTHING drop. The greater your points total, the larger your $NOTHING allocation.',
         leaderboard: [
             {
@@ -104,6 +108,8 @@ export const rows = [
         project: 'Nothing USD',
         totalUsers: '80k',
         totalPoints: '1,000,000',
+        totalRewards: '100,000',
+        yourPoints: '1,000',
         tagLine: 'NOTHING Gravity is an airdrop campaign to distribute the $NOTHING drop. The greater your points total, the larger your $NOTHING allocation.',
         leaderboard: [
             {

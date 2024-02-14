@@ -15,6 +15,15 @@ const NavBar = () => {
           <Link to='/projects' className='link-styles'>
             <div className='cursor-pointer'>Earn points</div>
           </Link>
+          <Link to='/farm' className='link-styles'>
+            <div className='cursor-pointer'>Farm points</div>
+          </Link>
+          <Link to='/trade' className='link-styles'>
+            <div className='cursor-pointer'>Trade</div>
+          </Link>
+          <Link to='/lend' className='link-styles'>
+            <div className='cursor-pointer'>Lend</div>
+          </Link>
       </div>
       <div>
           <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 md:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Connect Wallet</button>

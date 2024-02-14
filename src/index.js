@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import LeaderBoardPage from './pages/LeaderBoardPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectPage from './pages/ProjectPage';
+import FarmingPage from './pages/FarmingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     path: '/leaderboard/:id',
     element: <LeaderBoardPage />
   },
+  {
+    path: '/farm',
+    element: <FarmingPage />
+  }
 ]);
 
 root.render(
