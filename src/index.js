@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import LeaderBoardPage from './pages/LeaderBoardPage';
-import TasksPage from './pages/TasksPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ProjectPage from './pages/ProjectPage';
 
@@ -29,12 +28,8 @@ const router = createBrowserRouter([
     element: <ProjectPage />
   },
   {
-    path: '/leaderboard',
+    path: '/leaderboard/:id',
     element: <LeaderBoardPage />
-  },
-  {
-    path: '/tasks',
-    element: <TasksPage />
   },
 ]);
 

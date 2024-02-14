@@ -1,27 +1,7 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
-
-let rows = [
-    {
-        rank: 1,
-        project: 'Nothing Swap',
-        totalUsers: '120k',
-        totalPoints: '1,000,000'
-    },
-    {
-        rank: 2,
-        project: 'Nothing Lend',
-        totalUsers: '100k',
-        totalPoints: '1,000,000'
-    },
-    {
-        rank: 3,
-        project: 'Nothing USD',
-        totalUsers: '80k',
-        totalPoints: '1,000,000'
-    },
-]
+import { rows } from '../constant/index';
 
 const LeaderBoardTable = () => {
   const location = useLocation();
