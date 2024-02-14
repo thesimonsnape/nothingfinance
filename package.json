@@ -1,7 +1,7 @@
 {
   "name": "nothingfinance",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://thesimonsnape.github.io/nothingfi/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
