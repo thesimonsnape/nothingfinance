@@ -21,22 +21,20 @@ const LeaderBoardTable = (props) => {
                 </Link>
             </div>
             <table className='w-full mt-10'>
-                <thead className=''>
-                    <tr className='text-gray-500 font-semibold'>
-                        <td className='w-20 h-10 '>RANK</td>
-                        <td className='w-96 h-10'>ADDRESS</td>
-                        <td className='w-40 h-10'>REFERRAL POINTS</td>
-                        <td className='w-20 h-10'>TOTAL POINTS</td>
-                    </tr>
-                </thead>
                 <tbody>
+                    <tr className='text-gray-500 font-semibold text-center'>
+                        <td className='text-center'>RANK</td>
+                        <td className='text-center'>ADDRESS</td>
+                        <td className='text-center'>REFERRAL POINTS</td>
+                        <td className='text-center'>TOTAL POINTS</td>
+                    </tr>
                     {rows.map((el, idx) => {
                         return (
-                            <tr key={idx} className={`${idx % 2 === 0? 'text-white bg-[#06060d] opacity-50 ' : 'bg-[#0e0f11] opacity-50 text-white'}`}>
-                                <td className='py-3'>{el.rank}</td>
-                                <td className='py-3'>{el.address.substring(0, 4)}...{el.address.substring(el.address.length - 4, el.address.length - 0)}</td>
-                                <td className='py-3'>{el.referral_points}</td>
-                                <td className='py-3'>{el.total_points}</td>
+                            <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d] opacity-50 ' : 'bg-[#0e0f11] opacity-50 text-white'}`}>
+                                <td className='py-3 text-center'>{el.rank}</td>
+                                <td className='py-3 text-center'>{el.address.substring(0, 4)}...{el.address.substring(el.address.length - 4, el.address.length - 0)}</td>
+                                <td className='py-3 text-center'>{el.referral_points}</td>
+                                <td className='py-3 text-center'>{el.total_points}</td>
                             </tr>
                         )
                     })}
