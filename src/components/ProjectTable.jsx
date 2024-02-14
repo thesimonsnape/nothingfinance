@@ -31,12 +31,10 @@ const LeaderBoardTable = () => {
         <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-lg shadow-[#3b3b3b] px-10 '>
             <div className={`my-10 flex text-white ${location.pathname === '/project' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Protocols</h2>
-                {location.pathname === '/project'
-                 ? <p className='text-slate-500 text-sm'>NOTHING Cosmonauts will be airdropped 10% of $NOTHING's circulating supply on launch based on accumulated points</p>
-                 : 
+                {location.pathname !== '/projects' &&
                     <Link to='/projects' className='flex gap-2 items-center hover:underline cursor-pointer'>
                         <div className='flex gap-2 items-center hover:underline cursor-pointer'>
-                            View Projects <FaArrowRightLong className='translate-y-[1px]' />
+                            View Protocols <FaArrowRightLong className='translate-y-[1px]' />
                         </div>
                     </Link>
                 }
