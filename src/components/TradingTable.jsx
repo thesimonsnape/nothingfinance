@@ -40,7 +40,7 @@ const TradingTable = () => {
                 <h2 className='text-4xl font-semibold'>Buy protocol points</h2>
                 <Link to='/projects' className='hover:underline link-styles flex gap-2 items-center cursor-pointer'>
                     <div className='flex gap-2 items-center cursor-pointer'>
-                        View Protocols <FaArrowRightLong className='translate-y-[1px]' />
+                        Want to Sell your points? Register here <FaArrowRightLong className='translate-y-[1px]' />
                     </div>
                 </Link>
             </div>
