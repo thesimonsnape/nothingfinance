@@ -14,7 +14,7 @@ const LeaderBoardTable = (props) => {
                     Leaderboard
                     <p className='text-slate-500 text-sm'>NTH Cosmonauts will be airdropped 10% of $NTH's circulating supply on launch based on accumulated points</p>
                 </h2>
-                <Link to={`/project/${props.id}`} className='link-styles flex gap-2 items-center cursor-pointer'>
+                <Link to={`/project/${props.id}`} className='hover:underline link-styles flex gap-2 items-center cursor-pointer'>
                         <div className='flex gap-2 items-center cursor-pointer'>
                             View project <FaArrowRightLong className='translate-y-[1px]' />
                         </div>

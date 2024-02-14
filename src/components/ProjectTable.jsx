@@ -13,7 +13,7 @@ const LeaderBoardTable = () => {
             <div className={`my-10 flex text-white ${location.pathname === '/project' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Earn protocol points</h2>
                 {location.pathname !== '/projects' &&
-                    <Link to='/projects' className='link-styles flex gap-2 items-center cursor-pointer'>
+                    <Link to='/projects' className='hover:underline link-styles flex gap-2 items-center cursor-pointer'>
                         <div className='flex gap-2 items-center cursor-pointer'>
                             View Protocols <FaArrowRightLong className='translate-y-[1px]' />
                         </div>
