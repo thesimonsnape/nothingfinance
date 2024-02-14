@@ -40,11 +40,11 @@ const FarmingTable = () => {
                                 <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
                                 <td className='py-3 text-center opacity-50 '>{el.yourPoints}</td>
                                 <td className='py-3 text-center'>
-                                <button to={`/project/${el.rank}`} className='hover:underline opacity-100 text-center link-styles flex gap-2 items-center cursor-pointer'>
-                                    <div className='flex gap-2 text-center items-center cursor-pointer opacity-100'>
-                                        Stake
-                                    </div>
-                                </button>
+                                    <button to={`/project/${el.rank}`} className='hover:underline opacity-100 text-center link-styles flex gap-2 items-center cursor-pointer'>
+                                        <div className='flex gap-2 text-center items-center cursor-pointer opacity-100'>
+                                            Stake
+                                        </div>
+                                    </button>
                                 </td>
                             </tr>
                         )

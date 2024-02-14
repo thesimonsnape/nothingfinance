@@ -23,7 +23,7 @@ const LeaderBoardTable = () => {
             <table className='w-full mt-10'>
                 <tbody>
                     <tr className='text-gray-500 font-semibold text-center'>
-                        <th className='text-center'>RANK</th>
+                        <th className='text-center'></th>
                         <th className='text-center'>PROTOCOL</th>
                         <th className='text-center'>CURRENT POINTS SUPPLY</th>
                         <th className='text-center'>TOTAL USERS</th>
