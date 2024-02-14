@@ -30,7 +30,7 @@ const LeaderBoardPage = () => {
             <p className='text-slate-500 text-sm font-medium'>{row.tagLine}</p>
         </div>
         <div className='mt-12 mb-20'>
-            <LeaderBoardTable />
+            <LeaderBoardTable rows={row.leaderboard} id={id} />
         </div>
       </div>
     </div>

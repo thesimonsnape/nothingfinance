@@ -2,55 +2,23 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 
-let rows = [
-    {
-        rank: 1,
-        address: '0x1234567890123456789012345678901234567890',
-        referral_points: 100,
-        total_points: 100
-    },
-    {
-        rank: 2,
-        address: '0x1234567890123456789012345678901234567890',
-        referral_points: 100,
-        total_points: 100
-    },
-    {
-        rank: 3,
-        address: '0x1234567890123456789012345678901234567890',
-        referral_points: 100,
-        total_points: 100
-    },
-    {
-        rank: 4,
-        address: '0x1234567890123456789012345678901234567890',
-        referral_points: 100,
-        total_points: 100
-    },
-    {
-        rank: 5,
-        address: '0x1234567890123456789012345678901234567890',
-        referral_points: 100,
-        total_points: 100
-    },
-]
+const LeaderBoardTable = (props) => {
+  const location = useLocation();
 
-const LeaderBoardTable = () => {
-    const location = useLocation();
+  const rows = props.rows;
   return (
     <div className='bg-transparent w-full h-full flex justify-center items-center '>
         <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-lg shadow-[#3b3b3b] px-10 '>
             <div className={`my-10 flex text-white ${location.pathname === '/leaderboard' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
-                <h2 className='text-4xl font-semibold'>Leaderboard</h2>
-                {location.pathname === '/leaderboard'
-                 ? <p className='text-slate-500 text-sm'>NOTHING Cosmonauts will be airdropped 10% of $NOTHING's circulating supply on launch based on accumulated points</p>
-                 : 
-                    <Link to='/leaderboard' className='link-styles flex gap-2 items-center cursor-pointer'>
+                <h2 className='text-4xl font-semibold'>
+                    Leaderboard
+                    <p className='text-slate-500 text-sm'>NOTHING Cosmonauts will be airdropped 10% of $NOTHING's circulating supply on launch based on accumulated points</p>
+                </h2>
+                <Link to={`/project/${props.id}`} className='link-styles flex gap-2 items-center cursor-pointer'>
                         <div className='flex gap-2 items-center cursor-pointer'>
-                            View Leaderboard <FaArrowRightLong className='translate-y-[1px]' />
+                            View project <FaArrowRightLong className='translate-y-[1px]' />
                         </div>
-                    </Link>
-                }
+                </Link>
             </div>
             <table className='w-full mt-10'>
                 <thead className=''>
