@@ -23,10 +23,10 @@ const FarmingTable = () => {
                     <tr className='text-gray-500 font-semibold text-center'>
                         <th className='text-center'></th>
                         <th className='text-center'>PROTOCOL</th>
+                        <th className='text-center'>APY</th>
                         <th className='text-center'>TOTAL REWARDS</th>
                         <th className='text-center'>TOTAL USERS</th>
                         <th className='text-center'>YOUR POINTS</th>
-                        <th className='text-center'>APY</th>
                         <th className='text-center'></th>
                     </tr>
                     {rows.map((el, idx) => {
@@ -37,10 +37,10 @@ const FarmingTable = () => {
                                    <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
+                                <td className='py-3 text-center opacity-50 '>{el.apy}</td>
                                 <td className='py-3 text-center opacity-50 '>{el.totalRewards} PTS</td>
                                 <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
                                 <td className='py-3 text-center opacity-50 '>{el.yourPoints} PTS</td>
-                                <td className='py-3 text-center opacity-50 '>{el.apy}</td>
                                 <td className='py-3 text-center'>
                                     <button to={`/project/${el.rank}`} className='hover:underline opacity-100 text-center link-styles flex gap-2 items-center cursor-pointer'>
                                         <div className='flex gap-2 text-center items-center cursor-pointer opacity-100'>
