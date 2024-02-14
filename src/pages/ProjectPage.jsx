@@ -19,7 +19,7 @@ const ProjectsPage = () => {
              <span className='text-6xl text-[#6459e3]'>{row.totalPoints}<b className='text-[10px] text-[white]'>Earn more points by participating and completing the quests</b></span>
             </div>
             <br />
-            <Link to='/projects' className='link-styles flex gap-2 items-center cursor-pointer'>
+            <Link to={`/leaderboard/${id}`} className='link-styles flex gap-2 items-center cursor-pointer'>
                 <div className='flex gap-2 items-center cursor-pointer'>
                     View leaderboard <FaArrowRightLong className='translate-y-[2px]' />
                 </div>
