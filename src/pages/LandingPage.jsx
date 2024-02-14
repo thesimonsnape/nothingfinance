@@ -19,7 +19,7 @@ const LandingPage = () => {
                 <button className='border border-gray-300 rounded-full px-5 py-3 flex items-center gap-2 font-medium'>Enter NTHFinance <FaArrowRightLong className='translate-y-[2px]'/></button>
             </div>
         </div>
-        <div>
+        <div className='mb-14'>
             <LeaderBoardTable />
         </div>
     </div>
