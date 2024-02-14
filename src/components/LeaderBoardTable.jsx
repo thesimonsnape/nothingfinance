@@ -2,8 +2,6 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 
-
-
 let rows = [
     {
         rank: 1,
@@ -45,10 +43,10 @@ const LeaderBoardTable = () => {
             <div className={`my-10 flex text-white ${location.pathname === '/leaderboard' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Leaderboard</h2>
                 {location.pathname === '/leaderboard'
-                 ? <p className='text-slate-500 text-sm'>Zero Gravity Cosmonauts will be airdropped 10% of $ZERO's circulating supply on launch based on accumulated points</p>
+                 ? <p className='text-slate-500 text-sm'>NOTHING Cosmonauts will be airdropped 10% of $NOTHING's circulating supply on launch based on accumulated points</p>
                  : 
-                    <Link to='/leaderboard' className='flex gap-2 items-center hover:underline cursor-pointer'>
-                        <div className='flex gap-2 items-center hover:underline cursor-pointer'>
+                    <Link to='/leaderboard' className='link-styles flex gap-2 items-center cursor-pointer'>
+                        <div className='flex gap-2 items-center cursor-pointer'>
                             View Leaderboard <FaArrowRightLong className='translate-y-[1px]' />
                         </div>
                     </Link>

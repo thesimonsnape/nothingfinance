@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import LeaderBoardPage from './pages/LeaderBoardPage';
 import TasksPage from './pages/TasksPage';
 import ProjectsPage from './pages/ProjectsPage';
+import ProjectPage from './pages/ProjectPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element: <ProjectsPage />
+  },
+  {
+    path: '/project/:id',
+    element: <ProjectPage />
   },
   {
     path: '/leaderboard',

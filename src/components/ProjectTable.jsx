@@ -32,8 +32,8 @@ const LeaderBoardTable = () => {
             <div className={`my-10 flex text-white ${location.pathname === '/project' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Protocols</h2>
                 {location.pathname !== '/projects' &&
-                    <Link to='/projects' className='flex gap-2 items-center hover:underline cursor-pointer'>
-                        <div className='flex gap-2 items-center hover:underline cursor-pointer'>
+                    <Link to='/projects' className='link-styles flex gap-2 items-center cursor-pointer'>
+                        <div className='flex gap-2 items-center cursor-pointer'>
                             View Protocols <FaArrowRightLong className='translate-y-[1px]' />
                         </div>
                     </Link>
@@ -58,8 +58,8 @@ const LeaderBoardTable = () => {
                                 <td className='py-3'>{el.totalPoints} points</td>
                                 <td className='py-3'>{el.totalUsers}</td>
                                 <td className='py-3'>
-                                <Link to='/projects' className='flex gap-2 items-center hover:underline cursor-pointer'>
-                                    <div className='flex gap-2 items-center hover:underline cursor-pointer'>
+                                <Link to={`/project/${el.rank}`} className='link-styles flex gap-2 items-center cursor-pointer'>
+                                    <div className='flex gap-2 items-center cursor-pointer'>
                                         View <FaArrowRightLong className='translate-y-[1px]' />
                                     </div>
                                 </Link>

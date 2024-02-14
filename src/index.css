@@ -33,3 +33,11 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #5345e7;
 }
+
+.link-styles {
+  text-decoration: none;
+}
+
+.link-styles:hover {
+  text-decoration: none;
+}
