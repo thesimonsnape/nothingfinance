@@ -3,6 +3,8 @@ import { rows } from '../constant/index';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo/nthfinance_logo.png'
+import BlastLogo from '../assets/logo/blast_logo.png'
+
 
 const LendingTable = () => {
   const location = useLocation();
@@ -21,7 +23,7 @@ const LendingTable = () => {
             <table className='w-full mt-10'>
                 <tbody>
                     <tr className='text-gray-500 font-semibold text-center'>
-                        <th className='text-center'>PROTOCOL</th>
+                        <th className='text-start'>PROTOCOL</th>
                         <th className='text-center'>TOTAL POINTS</th>
                         <th className='text-center'>TOTAL USERS</th>
                         <th className='text-center'>YOUR POINTS</th>
@@ -32,15 +34,15 @@ const LendingTable = () => {
                     {rows.map((el, idx) => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
-                                <td className='py-3 flex gap-0 items-center justify-items-center opacity-50 text-center content-center justify-center'>
-                                   <img src={Logo} alt='logo' className='w-10 h-10 text-center'/>
+                                <td className='py-3 flex gap-0 items-center justify-items-start opacity-80'>
+                                   <img src={BlastLogo} alt='logo' className='w-10 h-10 text-center'/>
                                    {el.project}
                                 </td>
-                                <td className='py-3 opacity-50 text-center'>{el.totalPoints} PTS</td>
-                                <td className='py-3 opacity-50 text-center'>{el.totalUsers}</td>
-                                <td className='py-3 opacity-50 text-center'>{el.yourPoints}</td>
-                                <td className='py-3 opacity-50 text-center'>{el.lendingAPY}</td>
-                                <td className='py-3 opacity-50 text-center'>{el.borrowAPY}</td>
+                                <td className='py-3 opacity-80 text-center'>{el.totalPoints} PTS</td>
+                                <td className='py-3 opacity-80 text-center'>{el.totalUsers}</td>
+                                <td className='py-3 opacity-80 text-center'>{el.yourPoints}</td>
+                                <td className='py-3 opacity-80 text-center'>{el.lendingAPY}</td>
+                                <td className='py-3 opacity-80 text-center'>{el.borrowAPY}</td>
                                 <td className='py-3'>
                                     <button to={`/project/${el.rank}`} className='text-center hover:underline link-styles flex gap-2 items-center cursor-pointer opacity-100'>
                                         <div className='flex gap-2 items-center text-center cursor-pointer opacity-100'>

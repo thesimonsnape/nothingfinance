@@ -1,10 +1,11 @@
 import React from 'react'
 import Logo from '../assets/logo/nthfinance_logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const NavBar = () => {
+  const location = useLocation();
   return (
-    <div className='h-16 md:h-20 w-[350px] md:w-[700px] lg:w-[1200px] rounded-full fixed mt-10 flex justify-between items-center bg-transparent border border-[#363636] shadow-[#3838386a] shadow-md px-2 md:px-10 text-white z-10 backdrop-blur-sm'>
+    <div className='h-20 w-full fixed flex justify-between items-center bg-transparent shadow-md px-2 md:px-10 text-white z-10 backdrop-blur-sm'>
       <Link to='/' className='link-styles'>
         <div className='flex items-center'>
             <img src={Logo} alt='logo' className='w-10 h-10'/>
@@ -12,21 +13,21 @@ const NavBar = () => {
         </div>
       </Link>
       <div className='flex gap-12 items-center md:-translate-x-2 text-slate-100 text-[11px] md:text-base font-semibold'>
-          <Link to='/projects' className='link-styles'>
-            <div className='cursor-pointer'>Earn points</div>
+          <Link to='/projects' className={`${location.pathname === '/projects' ? 'decoration-[#6459e3] underline' : ''}`}>
+            <div className='text-sm md:text-lg font-semibold'>Earn</div>
           </Link>
-          <Link to='/farm' className='link-styles'>
-            <div className='cursor-pointer'>Farm points</div>
+          <Link to='/farm' className={`${location.pathname === '/farm' ? 'decoration-[#6459e3] underline' : ''}`}>
+            <div className='text-sm md:text-lg font-semibold'>Stake</div>
           </Link>
-          <Link to='/trade' className='link-styles'>
-            <div className='cursor-pointer'>Trade</div>
+          <Link to='/trade' className={`${location.pathname === '/trade' ? 'decoration-[#6459e3] underline' : ''}`}>
+            <div className='text-sm md:text-lg font-semibold'>Trade</div>
           </Link>
-          <Link to='/lend' className='link-styles'>
-            <div className='cursor-pointer'>Lend</div>
+          <Link to='/lend' className={`${location.pathname === '/lend' ? 'decoration-[#6459e3] underline' : ''}`}>
+            <div className='text-sm md:text-lg font-semibold'>Lend</div>
           </Link>
       </div>
       <div>
-          <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 md:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Connect Wallet</button>
+          <button className='bg-slate-100 text-gray-900 font-semibold px-4 py-1 lg:px-10 md:py-3 text-[11px] md:text-base rounded-full'>Connect Wallet</button>
       </div>
     </div>
   )

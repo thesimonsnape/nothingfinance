@@ -3,6 +3,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import { rows } from '../constant/index';
 import Logo from '../assets/logo/nthfinance_logo.png'
+import BlastLogo from '../assets/logo/blast_logo.png'
+
 
 const LeaderBoardTable = () => {
   const location = useLocation();
@@ -23,7 +25,8 @@ const LeaderBoardTable = () => {
             <table className='w-full mt-10'>
                 <tbody>
                     <tr className='text-gray-500 font-semibold text-center'>
-                        <th className='text-center'>PROTOCOL</th>
+                        <th className='text-start'>PROTOCOL</th>
+                        <th className='text-center'>CHAIN</th>
                         <th className='text-center'>CURRENT POINTS SUPPLY</th>
                         <th className='text-center'>TOTAL USERS</th>
                         <th className='text-center'>FARMING APY</th>
@@ -33,14 +36,15 @@ const LeaderBoardTable = () => {
                     {rows.map((el, idx) => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
-                                <td className='text-center justify-center py-3 flex items-center opacity-50 '>
-                                   <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
+                                <td className='justify-start py-3 flex items-center opacity-80 '>
+                                   <img src={BlastLogo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
-                                <td className='py-3 text-center opacity-50 '>{el.totalPoints} PTS</td>
-                                <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
-                                <td className='py-3 text-center opacity-50 '>{el.apy}</td>
-                                <td className='py-3 text-center opacity-50 '>{el.lendingAPY}</td>
+                                <td className='py-3 text-center opacity-80'>-</td>
+                                <td className='py-3 text-center opacity-80'>{el.totalPoints} PTS</td>
+                                <td className='py-3 text-center opacity-80'>{el.totalUsers}</td>
+                                <td className='py-3 text-center opacity-80'>{el.apy}</td>
+                                <td className='py-3 text-center opacity-80'>{el.lendingAPY}</td>
                                 <td className='py-3 text-center'>
                                 <Link to={`/project/${el.rank}`} className='hover:underline link-styles opacity-100 text-center flex gap-2 items-center cursor-pointer'>
                                     <div className='flex gap-2 items-center cursor-pointer text-center opacity-100 '>
@@ -51,7 +55,6 @@ const LeaderBoardTable = () => {
                             </tr>
                         )
                     })}
-                    <br />
                 </tbody>
             </table>
         </div>

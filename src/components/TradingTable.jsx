@@ -38,8 +38,8 @@ const TradingTable = () => {
         <div className='w-full max-w-[1200px] rounded-t-lg border border-[#2a2a2a] shadow-md shadow-[#3b3b3b] px-10 '>
             <div className={`my-10 flex text-white ${location.pathname === '/project' ? 'flex-col text-start ' : 'justify-between items-center'}`}>
                 <h2 className='text-4xl font-semibold'>Buy protocol points</h2>
-                <Link to='#' className='hover:underline link-styles flex gap-2 items-center cursor-pointer'>
-                    <div className='flex gap-2 items-center cursor-pointer text-[#6459e3]'>
+                <Link to='#' className='hover:underline decoration-indigo-500 flex gap-2 items-center cursor-pointer'>
+                    <div className='flex gap-2 items-center cursor-pointer text-[#6459e3] font-medium'>
                         Want to Sell your points? Register here <FaArrowRightLong className='translate-y-[1px]' />
                     </div>
                 </Link>

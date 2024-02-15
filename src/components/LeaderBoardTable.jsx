@@ -38,7 +38,6 @@ const LeaderBoardTable = (props) => {
                             </tr>
                         )
                     })}
-                    <br />
                 </tbody>
             </table>
         </div>

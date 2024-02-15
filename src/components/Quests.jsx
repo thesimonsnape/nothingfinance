@@ -21,7 +21,7 @@ const Quests = (props) => {
                                 <td className='py-3'>
                                     <div>
                                         <div className='text-lg font-semibold'>{quest.name}</div>
-                                        <div className='text-sm text-slate-400 font-medium'>{quest.description}</div>
+                                        {/* <div className='text-sm text-slate-400 font-medium'>{quest.description}</div> */}
                                     </div>
                                 </td>
                                 <td className='py-3'>{quest.points}</td>

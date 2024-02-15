@@ -1,7 +1,7 @@
 export const rows = [
     {
         rank: 1,
-        project: 'Nothing Swap',
+        project: 'Blast',
         totalUsers: '120k',
         totalPoints: '1,000,000',
         totalRewards: '100,000',
@@ -9,7 +9,7 @@ export const rows = [
         apy: '12%',
         lendingAPY: '4%',
         borrowAPY: '6%',
-        tagLine: 'NTH Gravity is an airdrop campaign to distribute the $NTH drop. The greater your points total, the larger your $NTH allocation.',
+        tagLine: 'Blast is the L2 that helps you earn. The only Ethereum L2 with native yield for ETH and stablecoins.',
         leaderboard: [
             {
                 rank: 1,
@@ -33,21 +33,21 @@ export const rows = [
         quests: [
             {
                 id: 1,
-                name: 'Join our Discord',
+                name: 'Follow Blast on Twitter',
                 description: 'Join our Discord to get access to the latest updates, ask questions, and get help from the community!',
                 points: '100 PTS',
                 status: 'active'
             },
             {
                 id: 2,
-                name: 'Say GM in Discord ☀️',
+                name: 'Join Blast Discord',
                 description: 'Head to the #gm channel on our discord and say GM to get daily points',
                 points: '10 PTS per gm per day',
                 status: 'active'
             },
             {
                 id: 3,
-                name: 'Follow on twitter',
+                name: 'Bridge ETH to Blast',
                 description: 'Follow our twitter to get access to the latest updates, ask questions, and get help from the community!',
                 points: '1000 PTS',
                 status: 'active'
@@ -56,7 +56,7 @@ export const rows = [
     },
     {
         rank: 2,
-        project: 'Nothing Lend',
+        project: 'HyperLook Finance',
         totalUsers: '100k',
         totalPoints: '1,000,000',
         totalRewards: '100,000',
@@ -111,7 +111,7 @@ export const rows = [
     },
     {
         rank: 3,
-        project: 'Nothing USD',
+        project: 'Aark',
         totalUsers: '80k',
         totalPoints: '1,000,000',
         totalRewards: '100,000',

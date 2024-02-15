@@ -5,6 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useParams } from 'react-router-dom';
 import { rows } from '../constant/index';
 import Logo from '../assets/logo/nthfinance_logo.png'
+import BlastLogo from '../assets/logo/blast_logo.png'
 
 const LeaderBoardPage = () => {
   const { id } = useParams();
@@ -17,7 +18,7 @@ const LeaderBoardPage = () => {
         <div className='flex flex-col gap-2 w-full text-white px-4 md:px-10 py-5 items-start justify-center rounded-lg shadow-[#211f3e] shadow-md'>
             <h2 className='text-xl'>Available Points</h2>
             <div className='flex items-center w-full gap-2'>
-             <span className='text-6xl text-[#6459e3]'>{row.totalPoints}<b className='text-[10px] text-[white]'>Earn more points by participating and completing the quests</b></span>
+             <span className='text-6xl text-[#6459e3]'>{row.totalPoints}<b className='text-[10px] text-slate-300 font-medium ml-1'>Earn more points by participating and completing the quests</b></span>
             </div>
             <br />
             <Link to={`/project/${id}`} className='hover:underline link-styles flex gap-2 items-center cursor-pointer'>
@@ -29,7 +30,7 @@ const LeaderBoardPage = () => {
         <div className='mt-12'>
             <h2 className='text-slate-200 text-3xl font-semibold flex items-center'>
               What is
-                <img src={Logo} alt='logo' className='w-10 h-10'/>
+                <img src={BlastLogo} alt='logo' className='w-10 h-10 translate-y-1'/>
                  {row.project}
               ?
             </h2>

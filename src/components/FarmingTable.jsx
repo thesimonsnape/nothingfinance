@@ -3,6 +3,8 @@ import { rows } from '../constant/index';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo/nthfinance_logo.png'
+import BlastLogo from '../assets/logo/blast_logo.png'
+
 
 const FarmingTable = () => {
   const location = useLocation();
@@ -21,7 +23,7 @@ const FarmingTable = () => {
             <table className='w-full mt-10'>
                 <tbody>
                     <tr className='text-gray-500 font-semibold text-center'>
-                        <th className='text-center'>PROTOCOL</th>
+                        <th className='text-start'>PROTOCOL</th>
                         <th className='text-center'>APY</th>
                         <th className='text-center'>TOTAL REWARDS</th>
                         <th className='text-center'>TOTAL USERS</th>
@@ -32,14 +34,14 @@ const FarmingTable = () => {
                     {rows.map((el, idx) => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
-                                <td className='py-3 text-center opacity-50 flex justify-center items-center'>
-                                   <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
+                                <td className='py-3 text-center opacity-80 flex justify-start items-center'>
+                                   <img src={BlastLogo} alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
-                                <td className='py-3 text-center opacity-50 '>{el.apy}</td>
-                                <td className='py-3 text-center opacity-50 '>{el.totalRewards} PTS</td>
-                                <td className='py-3 text-center opacity-50 '>{el.totalUsers}</td>
-                                <td className='py-3 text-center opacity-50 '>{el.yourPoints} PTS</td>
+                                <td className='py-3 text-center opacity-80 '>{el.apy}</td>
+                                <td className='py-3 text-center opacity-80 '>{el.totalRewards} PTS</td>
+                                <td className='py-3 text-center opacity-80 '>{el.totalUsers}</td>
+                                <td className='py-3 text-center opacity-80 '>{el.yourPoints} PTS</td>
                                 <td className='py-3 text-center'>
                                     <button to={`/project/${el.rank}`} className='hover:underline opacity-100 text-center link-styles flex gap-2 items-center cursor-pointer'>
                                         <div className='flex gap-2 text-center items-center cursor-pointer opacity-100'>
