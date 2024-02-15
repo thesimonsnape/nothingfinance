@@ -10,8 +10,9 @@ const TradePage = () => {
       <NavBar />
       <div className='w-full max-w-[1200px] mt-20'>
           <div className='mt-12 flex flex-col gap-2 w-full text-white px-4 md:px-10 py-5 items-start justify-center rounded-lg shadow-[#211f3e] shadow-md'>
-          <h2 className='text-xl md:text-2xl text-slate-100 font-semibold'>Protocols can open staking programs before the token generation event to reduce circulating supply. </h2>
-          <p className='text-sm font-medium text-slate-300'>Users can stake their xP points and earn yield on their xPs. </p>
+          <h2 className='text-2xl md:text-2xl text-slate-100 font-semibold'>How trading xP works? </h2>
+          <p className='text-sm font-medium text-slate-300'>Users can buy/sell xP points via an orderbook. xP point owners can sell their xP points for ETH and other tokens before the token airdrop. ETH users can buy xP points without having to farm airdrops.
+          </p>
           {/* <div className='flex items-center w-full gap-2'>
             <span className='text-6xl text-[#6459e3]'>{'Nothing DEX'}<b className='text-[10px] text-[white]'>A decentralized DEX</b></span>
           </div>

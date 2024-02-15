@@ -10,9 +10,8 @@ const LendPage = () => {
       <NavBar />
       <div className='w-full max-w-[1200px] mt-20'>
         <div className='mt-12 flex flex-col gap-2 w-full text-white px-4 md:px-10 py-5 items-start justify-center rounded-lg shadow-[#211f3e] shadow-md'>
-          <h2 className='text-xl md:text-3xl font-semibold'>Users can Buy/Sell xP points via an orderbook. </h2>
-          <p className='text-sm text-slate-300 font-medium leading-[10px]'>xP point owners can sell their xP points for ETH and other tokens before the token airdrop. </p>
-          <p className='text-sm text-slate-300 font-medium'>ETH users can buy xP points without having to farm airdrops. </p> 
+          <h2 className='text-xl md:text-3xl font-semibold'>How lending xP works?</h2>
+          <p className='text-sm text-slate-300 font-medium leading-[10px]'>xP point owners can use their xP points as collaterals to take loans in more liquid tokens like USDC, USDT and ETH.  </p>
           <br />
         </div>
         <div className="flex items-center justify-center max-w-full w-full gap-10">

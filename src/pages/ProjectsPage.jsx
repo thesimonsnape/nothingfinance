@@ -15,7 +15,7 @@ const ProjectsPage = () => {
           <div className='flex items-center w-full gap-2 -translate-x-4'>
             <div className='text-6xl text-[#fefe04] flex items-center '>
               <img src={BlastLogo} alt='blast logo' className='w-20 h-24'/>
-              <h2 className='-translate-y-0 -translate-x-3 flex'>last<span className='text-[10px] font-medium text-[white] mt-auto ml-1 -translate-y-[6px]'>A decentralized DEX</span></h2>
+              <h2 className='-translate-y-0 -translate-x-3 flex'>last<span className='text-[10px] font-medium text-[white] mt-auto ml-1 -translate-y-[6px]'>Blast is the L2 that helps you earn. The only Ethereum L2 with native yield for ETH and stablecoins.</span></h2>
             </div>
           </div>
           <br />
