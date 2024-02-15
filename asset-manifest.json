@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/nothingfinance/static/css/main.340a4eff.css",
-    "main.js": "/nothingfinance/static/js/main.4100504a.js",
+    "main.js": "/nothingfinance/static/js/main.8499a781.js",
     "static/js/453.c7531f16.chunk.js": "/nothingfinance/static/js/453.c7531f16.chunk.js",
     "static/media/blast_logo.png": "/nothingfinance/static/media/blast_logo.a8d5b0adf059a97047fb.png",
     "static/media/nothing-finance.jpeg": "/nothingfinance/static/media/nothing-finance.eaa23e08ffaa2ed7a9e2.jpeg",
     "index.html": "/nothingfinance/index.html",
     "main.340a4eff.css.map": "/nothingfinance/static/css/main.340a4eff.css.map",
-    "main.4100504a.js.map": "/nothingfinance/static/js/main.4100504a.js.map",
+    "main.8499a781.js.map": "/nothingfinance/static/js/main.8499a781.js.map",
     "453.c7531f16.chunk.js.map": "/nothingfinance/static/js/453.c7531f16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.340a4eff.css",
-    "static/js/main.4100504a.js"
+    "static/js/main.8499a781.js"
   ]
 }
