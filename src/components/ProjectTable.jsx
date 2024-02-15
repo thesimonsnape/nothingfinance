@@ -3,6 +3,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import { rows } from '../constant/index';
 import BlastLogo from '../assets/logo/blast_logo.png'
+import AarkLogo from '../assets/logo/aark_logo.jpg';
+import HyperlookLogo from '../assets/logo/hyperlook.png';
 
 
 const LeaderBoardTable = () => {
@@ -36,7 +38,13 @@ const LeaderBoardTable = () => {
                         return (
                             <tr key={idx} className={`text-center ${idx % 2 === 0? 'text-white bg-[#06060d]' : 'bg-[#0e0f11] text-white'}`}>
                                 <td className='justify-start py-3 flex items-center opacity-80 '>
-                                   <img src={BlastLogo} alt='logo' className='text-center w-10 h-10'/>
+                                <img src={
+                                        el.logo === 'blast'
+                                            ? BlastLogo
+                                            : el.logo === 'aark'
+                                                ? AarkLogo
+                                                : HyperlookLogo
+                                    } alt='logo' className='text-center w-10 h-10 p-2'/>
                                    {el.project}
                                 </td>
                                 <td className='py-3 text-center opacity-80'>-</td>

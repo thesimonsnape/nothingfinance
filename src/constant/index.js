@@ -9,6 +9,7 @@ export const rows = [
         apy: '12%',
         lendingAPY: '4%',
         borrowAPY: '6%',
+        logo: 'blast',
         tagLine: 'Blast is the L2 that helps you earn. The only Ethereum L2 with native yield for ETH and stablecoins.',
         leaderboard: [
             {
@@ -64,6 +65,7 @@ export const rows = [
         apy: '14%',
         lendingAPY: '4%',
         borrowAPY: '6%',
+        logo: 'hyperlook',
         tagLine: 'NTH Gravity is an airdrop campaign to distribute the $NTH drop. The greater your points total, the larger your $NTH allocation.',
         leaderboard: [
             {
@@ -119,6 +121,7 @@ export const rows = [
         apy: '10%',
         lendingAPY: '4%',
         borrowAPY: '6%',
+        logo: 'aark',
         tagLine: 'NTH Gravity is an airdrop campaign to distribute the $NTH drop. The greater your points total, the larger your $NTH allocation.',
         leaderboard: [
             {
