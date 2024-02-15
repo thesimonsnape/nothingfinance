@@ -4,7 +4,6 @@ import LeaderBoardTable from '../components/LeaderBoardTable'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useParams } from 'react-router-dom';
 import { rows } from '../constant/index';
-import Logo from '../assets/logo/nthfinance_logo.png'
 import BlastLogo from '../assets/logo/blast_logo.png'
 
 const LeaderBoardPage = () => {

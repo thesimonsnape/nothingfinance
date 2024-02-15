@@ -2,7 +2,6 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import { rows } from '../constant/index';
-import Logo from '../assets/logo/nthfinance_logo.png'
 import BlastLogo from '../assets/logo/blast_logo.png'
 
 

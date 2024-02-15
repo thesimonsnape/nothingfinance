@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
-import Logo from '../assets/logo/nthfinance_logo.png'
+import Logo from '../assets/logo/nothing-finance.jpeg'
 import ProjectTable from '../components/ProjectTable';
 import { Link } from 'react-router-dom';
 

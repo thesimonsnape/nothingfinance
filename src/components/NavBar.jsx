@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/logo/nthfinance_logo.png'
+import Logo from '../assets/logo/nothing-finance.jpeg'
 import { Link, useLocation } from 'react-router-dom'
 
 const NavBar = () => {
