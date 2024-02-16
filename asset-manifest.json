@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/nothingfinance/static/css/main.77a546b5.css",
-    "main.js": "/nothingfinance/static/js/main.756b5d28.js",
+    "main.js": "/nothingfinance/static/js/main.cf7d3d70.js",
     "static/js/453.c7531f16.chunk.js": "/nothingfinance/static/js/453.c7531f16.chunk.js",
     "static/media/aark_logo.jpg": "/nothingfinance/static/media/aark_logo.15df4f3617bf76961e9c.jpg",
     "static/media/blast_logo.png": "/nothingfinance/static/media/blast_logo.a8d5b0adf059a97047fb.png",
     "static/media/nothing-finance.jpeg": "/nothingfinance/static/media/nothing-finance.eaa23e08ffaa2ed7a9e2.jpeg",
     "index.html": "/nothingfinance/index.html",
     "main.77a546b5.css.map": "/nothingfinance/static/css/main.77a546b5.css.map",
-    "main.756b5d28.js.map": "/nothingfinance/static/js/main.756b5d28.js.map",
+    "main.cf7d3d70.js.map": "/nothingfinance/static/js/main.cf7d3d70.js.map",
     "453.c7531f16.chunk.js.map": "/nothingfinance/static/js/453.c7531f16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77a546b5.css",
-    "static/js/main.756b5d28.js"
+    "static/js/main.cf7d3d70.js"
   ]
 }
