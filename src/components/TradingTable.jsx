@@ -1,26 +1,32 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../assets/logo/nothing-finance.jpeg'
+import BlastLogo from '../assets/logo/blast_logo.png'
+import AarkLogo from '../assets/logo/aark_logo.jpg';
+import HyperlookLogo from '../assets/logo/hyperlook.png';
+
 
 const orders = [
     {
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
         price: '29',
         quantity: '100 PTS',
-        project: 'Blast'
+        project: 'Blast',
+        logo: 'blast',
     },
     {
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
         price: '9',
         quantity: '100 PTS',
-        project: 'HyperLook Finance'
+        project: 'HyperLook Finance',
+        logo: 'hyperlook',
     },
     {
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
         price: '10',
         quantity: '100 PTS',
-        project: 'Aark'
+        project: 'Aark',
+        logo: 'aark',
     },
 ]
 
@@ -56,7 +62,13 @@ const TradingTable = () => {
                                 <td className='text-center py-3 opacity-50 '>${el.price}</td>
                                 <td className='text-center py-3 opacity-50 '>{el.quantity}</td>
                                 <td className='text-center py-3 flex justify-center items-center opacity-50 '>
-                                   <img src={Logo} alt='logo' className='text-center w-10 h-10'/>
+                                   <img src={
+                                        el.logo === 'blast'
+                                            ? BlastLogo
+                                            : el.logo === 'aark'
+                                                ? AarkLogo
+                                                : HyperlookLogo
+                                    } alt='logo' className='text-center w-10 h-10'/>
                                    {el.project}
                                 </td>
                                 <td className='text-center py-3'>
