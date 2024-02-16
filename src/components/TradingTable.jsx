@@ -20,7 +20,7 @@ const orders = [
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
         price: '10',
         quantity: '100 PTS',
-        project: 'logoAark'
+        project: 'Aark'
     },
 ]
 
