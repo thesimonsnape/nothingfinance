@@ -68,7 +68,7 @@ const TradingTable = () => {
                                             : el.logo === 'aark'
                                                 ? AarkLogo
                                                 : HyperlookLogo
-                                    } alt='logo' className='text-center w-10 h-10'/>
+                                    } alt='logo' className='text-center w-10 h-10'/>&nbsp;
                                    {el.project}
                                 </td>
                                 <td className='text-center py-3'>
