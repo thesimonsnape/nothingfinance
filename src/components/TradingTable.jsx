@@ -6,27 +6,21 @@ import Logo from '../assets/logo/nothing-finance.jpeg'
 const orders = [
     {
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
-        price: '9',
+        price: '29',
         quantity: '100 PTS',
-        project: 'Nothing Swap'
+        project: 'Blast'
     },
     {
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
         price: '9',
         quantity: '100 PTS',
-        project: 'Nothing Swap'
+        project: 'HyperLook Finance'
     },
     {
         from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
-        price: '9',
+        price: '10',
         quantity: '100 PTS',
-        project: 'Nothing Lend'
-    },
-    {
-        from: '0xef30e78BAB187670B9e25C968b27987029164b3c',
-        price: '9',
-        quantity: '100 PTS',
-        project: 'Nothing USD'
+        project: 'logoAark'
     },
 ]
 
