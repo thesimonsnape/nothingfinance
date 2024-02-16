@@ -43,7 +43,7 @@ export const rows = [
                 id: 2,
                 name: 'Join Blast Discord',
                 description: 'Head to the #gm channel on our discord and say GM to get daily points',
-                points: '10 PTS per gm per day',
+                points: '100 PTS per day',
                 status: 'active'
             },
             {
@@ -99,7 +99,7 @@ export const rows = [
                 id: 2,
                 name: 'Say GM in Discord ☀️',
                 description: 'Head to the #gm channel on our discord and say GM to get daily points',
-                points: '10 PTS per gm per day',
+                points: '100 PTS per day',
                 status: 'active'
             },
             {
@@ -155,7 +155,7 @@ export const rows = [
                 id: 2,
                 name: 'Say GM in Discord ☀️',
                 description: 'Head to the #gm channel on our discord and say GM to get daily points',
-                points: '10 PTS per gm per day',
+                points: '100 PTS per day',
                 status: 'active'
             },
             {
